@@ -1,0 +1,17 @@
+{
+    "name": "development",
+    "description": "The development Chef environment",
+    "json_class": "Chef::Environment",
+    "chef_type": "environment",
+    "default_attributes": {
+        "mbaas": {
+            "deployable_war": "dev-mbaas.war",
+            "warbuilds_bucket": "s3://bbmobile-warbuilds.development"
+        },
+		"learn": {
+			"endpoints": {
+				"smtp": "10.145.35.2"
+			}
+		}
+    }
+}

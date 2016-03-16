@@ -1,0 +1,17 @@
+{
+    "name": "production",
+    "description": "The production Chef environment",
+    "json_class": "Chef::Environment",
+    "chef_type": "environment",
+    "default_attributes": {
+        "mbaas": {
+            "deployable_war": "prod-mbaas.war",
+            "warbuilds_bucket": "s3://bbmobile-warbuilds.production"
+        },
+		"learn": {
+			"endpoints": {
+				"smtp": "69.196.242.131"
+			}
+		}
+    }
+}
